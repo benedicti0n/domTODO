@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-md w-full max-w-sm">
+      <form id="todoForm" class="space-y-4">
+        <div>
+          <label for="todo" class="block text-lg font-medium text-gray-700"
+            >Add Todo</label
+          >
+          <input
+            type="text"
+            id="todoInput"
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+            placeholder="Enter your task"
+          />
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+        >
+          Add Todo
+        </button>
+      </form>
+      <ul id="todoList" class="mt-4 space-y-2"></ul>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
